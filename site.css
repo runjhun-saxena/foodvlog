@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* Navigation bar :Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 4px;
+    border: black;
+    border-radius: 50%;
+}
+/* Navigation bar : list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "5";
+    background-color:black;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.72;
+
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+  
+
+}
+#navbar ul li  a:hover{
+    color: black;
+    background-color: white;
+}
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(bg1.jpg) no-repeat center center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.40;
+}
+    #home h1 {
+        color: rgba(0, 0, 0, 0.799);
+        text-align: center;
+        font-size: 3.8rem;
+    }
+#home p{
+    color: rgba(0, 0, 0, 0.53);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+/* utility classes */
+#h-primary{
+    font-size: 1.8rem;
+    padding: 15px;
+}
+.button{
+        padding: 6px 20px;
+        border: 4px solid white;
+        background-color: rgba(107, 61, 24, 0.578);
+        margin: 20px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 10%
+}
